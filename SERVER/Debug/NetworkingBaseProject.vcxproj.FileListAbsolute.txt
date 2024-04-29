@@ -2,4 +2,3 @@ C:\Users\Marie\Documents\Dev\NetworkingBaseProject\Debug\NetworkingBaseProject.e
 C:\Users\Marie\Documents\Dev\NetworkingBaseProject\Client\Debug\SimpleServer.exe
 C:\Users\Marie\Documents\Dev\NetworkingBaseProject\SERVER\Debug\SimpleServer.exe
 C:\Users\marie.legrand\Documents\GitHub\NetworkingBaseProject\SERVER\Debug\SimpleServer.exe
-D:\Prog\C++\NetworkingBaseProject\SERVER\Debug\SimpleServer.exe
