@@ -1,1 +1,2 @@
 C:\Users\marie.legrand\Documents\Dev\Fork\NetworkingBaseProject\CLIENT\x64\Debug\SimpleClient.exe
+D:\Prog\C++\NetworkingBaseProject\CLIENT\x64\Debug\SimpleClient.exe
