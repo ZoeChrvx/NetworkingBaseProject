@@ -9,59 +9,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f80085f7-4f4b-4cba-a85f-02e3d8a7dbe3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.exe.recipe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/Cl.items.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/SimpleClient.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/SimpleClient.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link-cvtres.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link-cvtres.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link-rc.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link-rc.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868-cvtres.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868-cvtres.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868-rc.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868-rc.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.3868.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/SimpleClient.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/SimpleClient.tlog/unsuccessfulbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/vc143.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleClient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.exe.recipe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/Cl.items.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/SimpleClient.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/SimpleClient.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/NetworkingBaseProject.vcxproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.exe.recipe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/Cl.items.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/SimpleServer.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/SimpleServer.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
@@ -191,6 +147,7 @@
       <workItem from="1714378214963" duration="44000" />
       <workItem from="1714380494191" duration="5581000" />
       <workItem from="1714460533308" duration="10765000" />
+      <workItem from="1714636670041" duration="2046000" />
     </task>
     <servers />
   </component>
@@ -199,16 +156,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SimpleClient.cpp</url>
-          <line>81</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

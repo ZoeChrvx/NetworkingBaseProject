@@ -34,10 +34,10 @@ int main(int argc, char* argv[])
 
 	//J'attend des clients
 	SDLNet_SocketSet set = SDLNet_AllocSocketSet(8);
-	vector<TCPsocket*> tcpSockets;
+	vector<_TCPsocket*> tcpSockets;
 	while (true)
 	{
-		TCPsocket clientSocket;
+		_TCPsocket* clientSocket;
 
 		clientSocket = SDLNet_TCP_Accept(serverSocket);
 		if(clientSocket)
@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
 				if(clientInfo.find(clientIP) == clientInfo.end())
 				{
 					clientInfo.try_emplace(clientIP, buffer);
-					tcpSockets.emplace_back(&clientSocket);
+					tcpSockets.emplace_back(clientSocket);
 				}
 				cout << "Pseudo: " << buffer << endl;
 				
@@ -61,28 +61,38 @@ int main(int argc, char* argv[])
 		if(clientInfo.size() > 0 && SDLNet_CheckSockets(set, 0)!=0)
 		{
 			char buffer[2048];
-			for(TCPsocket* sock : tcpSockets)
+			for(_TCPsocket* sock : tcpSockets)
 			{
 				if(!SDLNet_SocketReady(sock))
 				{
 					continue;
 				}
-				IPaddress* sockIP = SDLNet_TCP_GetPeerAddress(*reinterpret_cast<TCPsocket*>(sock));
-				int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+				IPaddress* sockIP = SDLNet_TCP_GetPeerAddress(reinterpret_cast<_TCPsocket*>(sock));
+				int bytesRead = SDLNet_TCP_Recv(sock, buffer, sizeof(buffer));
 				if(bytesRead > 0)
 				{
-					cout << "Incoming message from"<<clientInfo[sockIP]<<": " << buffer << endl;
+					cout << "Incoming message from "<<clientInfo[sockIP]<<": " << buffer << endl;
+
+					for(_TCPsocket* rcvSock : tcpSockets)
+					{
+						if(rcvSock == sock) continue;
+						int bytesSent = SDLNet_TCP_Send(rcvSock, buffer, sizeof(buffer));
+						if(bytesSent < sizeof(buffer)+1)
+						{
+							//ERROR
+						}
+					}
 				}
 			}
 			
 		}
 	}
 
-	cout << "Thank you for using ChArtFX !\n";
-	for(TCPsocket* sock: tcpSockets)
-	{
-		SDLNet_TCP_Close(*sock);
-	}
+	// cout << "Thank you for using ChArtFX !\n";
+	// for(TCPsocket* sock: tcpSockets)
+	// {
+	// 	SDLNet_TCP_Close(*sock);
+	// }
 	//SDLNet_TCP_Close(set);
 	SDLNet_Quit();
 	return 0;
