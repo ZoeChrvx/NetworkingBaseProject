@@ -8,14 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f35fe942-dee7-4ef2-8207-602f1d0ed5c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../CLIENT/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLIENT/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/SimpleClient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/SDL2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/SDL2_image.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/SDL2_net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/SDL2_ttf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/raylib.lib" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/SimpleClient.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CLIENT/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleServer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDL2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDL2_image.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDL2_net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDL2_ttf.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleServer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
@@ -98,29 +105,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C++ Project.NetworkingBaseProject.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C++ Project.NetworkingBaseProject.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\zoe.chervaux\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\zoe.chervaux\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\zoe.chervaux\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\zoe.chervaux\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\zoe.chervaux\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\zoe.chervaux\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="NetworkingBaseProject" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -186,6 +193,7 @@
       <workItem from="1714460543314" duration="8997000" />
       <workItem from="1714472224083" duration="2989000" />
       <workItem from="1714636687339" duration="2032000" />
+      <workItem from="1714638936095" duration="1502000" />
     </task>
     <servers />
   </component>
@@ -198,16 +206,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SimpleServer.cpp</url>
-          <line>71</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SimpleServer.cpp</url>
-          <line>84</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SimpleServer.cpp</url>
           <line>61</line>
