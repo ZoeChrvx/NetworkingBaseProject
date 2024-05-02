@@ -79,7 +79,8 @@ int main(int argc, char* argv[]) {
             if(IsKeyPressed(KEY_BACKSPACE))typing.pop_back();
             else if (IsKeyPressed(KEY_ENTER))
             {
-                log.push_back(Message{true, typing});
+                log.emplace_back(Message{true, (pseudoClient + " : " + typing)});
+
                 int bytesSent = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length()+1);
                 cout << "Sent " << bytesSent << " bytes to the server !" << std::endl;
 

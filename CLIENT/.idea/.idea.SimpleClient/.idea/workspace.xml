@@ -8,23 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f80085f7-4f4b-4cba-a85f-02e3d8a7dbe3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SDL2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_image.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_ttf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raylib.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleClient.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/SimpleClient.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/.idea/.idea.SimpleServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/SDL2.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/SDL2_image.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/SDL2_net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SERVER/SDL2_ttf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/SimpleServer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/SimpleServer.tlog/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../SERVER/x64/Debug/vc143.pdb" afterDir="false" />
     </list>
@@ -156,6 +151,7 @@
       <workItem from="1714460533308" duration="10765000" />
       <workItem from="1714636670041" duration="2046000" />
       <workItem from="1714638928780" duration="701000" />
+      <workItem from="1714641908163" duration="1153000" />
     </task>
     <servers />
   </component>

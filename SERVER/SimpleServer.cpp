@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	map<IPaddress*, std::string> clientInfo;
+	map<_TCPsocket*, std::string> clientInfo;
 	if (SDLNet_Init() == -1)
 	{
 		cerr << "SDLNet_Init error: " << SDLNet_GetError() << endl;
@@ -44,14 +44,13 @@ int main(int argc, char* argv[])
 		{
 			cout << "A client reached the server !" << endl;
 			SDLNet_AddSocket(set, reinterpret_cast<SDLNet_GenericSocket>(clientSocket));
-			IPaddress* clientIP = SDLNet_TCP_GetPeerAddress(clientSocket);
 			char buffer[1024];
 			int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
 			if(bytesRead > 0 )//&& SDLNet_CheckSockets(set, 0)!=0)
 			{
-				if(clientInfo.find(clientIP) == clientInfo.end())
+				if(clientInfo.find(clientSocket) == clientInfo.end())
 				{
-					clientInfo.try_emplace(clientIP, buffer);
+					clientInfo.try_emplace(clientSocket, buffer);
 					tcpSockets.emplace_back(clientSocket);
 				}
 				cout << "Pseudo: " << buffer << endl;
@@ -67,17 +66,17 @@ int main(int argc, char* argv[])
 				{
 					continue;
 				}
-				IPaddress* sockIP = SDLNet_TCP_GetPeerAddress(reinterpret_cast<_TCPsocket*>(sock));
 				int bytesRead = SDLNet_TCP_Recv(sock, buffer, sizeof(buffer));
+				string msg = (clientInfo[sock] + " : " + buffer);
 				if(bytesRead > 0)
 				{
-					cout << "Incoming message from "<<clientInfo[sockIP]<<": " << buffer << endl;
+					cout << "Incoming message from "<<clientInfo[sock]<<": " << buffer << endl;
 
 					for(_TCPsocket* rcvSock : tcpSockets)
 					{
 						if(rcvSock == sock) continue;
-						int bytesSent = SDLNet_TCP_Send(rcvSock, buffer, sizeof(buffer));
-						if(bytesSent < sizeof(buffer)+1)
+						int bytesSent = SDLNet_TCP_Send(rcvSock, msg.c_str(), msg.length()+1);
+						if(bytesSent < msg.length()+1)
 						{
 							//ERROR
 						}
