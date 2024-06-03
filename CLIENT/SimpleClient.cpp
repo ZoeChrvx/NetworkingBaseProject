@@ -3,7 +3,7 @@
 #include <iostream>
 #include <raylib.h>
 #include <vector>
-//#include <string>
+#include <string>
 using namespace std;
 
 struct Message
@@ -11,6 +11,24 @@ struct Message
     bool fromMe = false;
     string content;
 };
+
+struct GameState
+{
+    float paddleLeft, paddleRight;
+    Vector2 ballPosition;
+    int scoreLeft, scoreRight;
+};
+
+void Draw(GameState gameState) {
+    BeginDrawing();
+    ClearBackground(BLACK);
+    DrawRectangleRec({ 0, gameState.paddleLeft,10,100 }, WHITE);
+    DrawRectangleRec({ 800-10, gameState.paddleRight,10,100 }, WHITE);
+    DrawCircle(gameState.ballPosition.x, gameState.ballPosition.y, 20, WHITE);
+    DrawText(std::to_string(gameState.scoreLeft).c_str(), 800 / 2 - 100, 50, 50, WHITE);
+    DrawText(std::to_string(gameState.scoreRight).c_str(), 800 / 2 + 100, 50, 50, WHITE);
+    EndDrawing();
+}
 
 int main(int argc, char* argv[]) {
 
@@ -25,9 +43,6 @@ int main(int argc, char* argv[]) {
     cout << "Saisissez le port" << endl;
     int host;
     cin >> host;
-    cout << "Saisissez votre nom." << endl;
-    string pseudoClient;
-    cin >> pseudoClient;
     
     
     
@@ -50,83 +65,50 @@ int main(int argc, char* argv[]) {
     }
     SDLNet_SocketSet set = SDLNet_AllocSocketSet(1);;
     SDLNet_TCP_AddSocket(set, clientSocket);
-    int pseudoClientSend = SDLNet_TCP_Send(clientSocket, pseudoClient.c_str(), pseudoClient.length()+1);
-
-    vector<Message> log{Message{ false, "Waiting for someone to talk to ..."}};
     
-    const int width = 500, height = 750;
+    const int width = 800, height = 600;
     InitWindow(width, height, "My first chat window !");
     SetTargetFPS(60);
-
-
-    string typing;
+    
+    GameState currentGameState = {};
     while (!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(GRAY);
-        DrawText("Welcome to ChArtFX !", 220, 15, 25, WHITE);
-        DrawRectangle(20,50,width-40,height-150, DARKBLUE);
-        
-        DrawRectangle(20,height-90,width-40,50, LIGHTGRAY);
-
-        int inputChar = GetCharPressed();
-        if(inputChar != 0)
-        {
-            typing += static_cast<char>(inputChar);
-        }
-        if(typing.size()>0)
-        {
-            if(IsKeyPressed(KEY_BACKSPACE))typing.pop_back();
-            else if (IsKeyPressed(KEY_ENTER))
-            {
-                log.emplace_back(Message{true, (pseudoClient + " : " + typing)});
-
-                int bytesSent = SDLNet_TCP_Send(clientSocket, typing.c_str(), typing.length()+1);
-                cout << "Sent " << bytesSent << " bytes to the server !" << std::endl;
-
-                if(bytesSent < typing.length()+1)
-                {
-                    cerr << "SDLNet TCP Send error: " << SDLNet_GetError()<<endl;
-                    SDLNet_TCP_Close(clientSocket);
-                    SDLNet_Quit();
-                    return 1;
-                }
-                typing.clear();
-                
-            }
-            
-        }
-        char buffer[2048];
-                
+        Draw(currentGameState);
          if(SDLNet_CheckSockets(set, 0)!=0 && SDLNet_SocketReady(clientSocket))
          {
-             int bytesRead = SDLNet_TCP_Recv(clientSocket, buffer, sizeof(buffer));
+             int bytesRead = SDLNet_TCP_Recv(clientSocket, &currentGameState, sizeof(currentGameState));
              if (bytesRead <= 0)
              {
                  cerr << "SDLNet TCP Recv error: " << SDLNet_GetError() << endl;
                  SDLNet_TCP_Close(clientSocket);
                  SDLNet_Quit();
                  return 1;
-             }
-             cout << "Incoming response: " << buffer << endl;
-             log.emplace_back(Message{false, buffer});
-         }
-        for(int msg = 0; msg < log.size(); msg++)
+             }             
+         }        
+        
+        if(IsKeyDown(KEY_UP))
         {
-            DrawText(log[msg].content.c_str(), 30,90+(msg*30),15, log[msg].fromMe?SKYBLUE:PURPLE);
+            int8_t move = -1;
+            int bytesSent = SDLNet_TCP_Send(clientSocket, &move, sizeof(move));
+            if (bytesSent < sizeof(move)) {
+                cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << endl;
+                break;
+            }
         }
-        DrawText(typing.c_str(), 30, height - 75, 25, BLACK);
+        if(IsKeyDown(KEY_DOWN))
+        {
+            int8_t move = 1;
+            int bytesSent = SDLNet_TCP_Send(clientSocket, &move, sizeof(move));
+            if (bytesSent < sizeof(move)) {
+                cerr << "SDLNet TCP Send error: " << SDLNet_GetError() << endl;
+                break;
+            }
+        }
         EndDrawing();
     }
-
-    //Envoyer un message
-
     
     SDLNet_TCP_Close(clientSocket);
     SDLNet_Quit();
-	
-
-	
-    cout << "Thank you for using ChArtFX !\n";
     return 0;
 }
